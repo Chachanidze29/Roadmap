@@ -4,23 +4,28 @@ class LinkedList:
         self.tail = None
 
     class Node:
-        def __init__(self, value, next_node):
+        def __init__(self, value, next_node=None, prev_node=None):
             self.value = value
             self.next_node = next_node
+            self.prev_node = prev_node
 
     def prepend(self, value):
-        new_node = self.Node(value, self.head)
+        new_node = self.Node(value)
+        if self.head is not None:
+            self.head.prev_node = new_node
+            new_node.next_node = self.head
         self.head = new_node
-        if not self.tail:
+        if self.tail is None:
             self.tail = new_node
 
     def append(self, value):
-        new_node = self.Node(value, None)
-        if not self.head:
+        new_node = self.Node(value)
+        if self.head is None:
             self.head = new_node
             self.tail = new_node
             return
         self.tail.next_node = new_node
+        new_node.prev_node = self.tail
         self.tail = new_node
 
     def map(self, callback):
@@ -38,23 +43,21 @@ class LinkedList:
         return False
 
     def pop(self):
-        if not self.head:
+        if self.head is None:
             return None
         value = self.head.value
-        if self.head.next_node:
-            self.head = self.head.next_node
-        else:
-            self.head = None
-            self.tail = None
+        self.head = self.head.next_node
+        self.head.prev_node = None
         return value
 
     def pop_back(self):
-        curr = self.head
-        while curr.next_node.next_node is not None:
-            curr = curr.next_node
-        value = curr.next_node.value
-        curr.next_node = None
-        self.tail = curr
+        if self.head is None:
+            return None
+        value = self.tail.value
+        new_tail = self.tail.prev_node
+        new_tail.next = None
+        new_tail.prev_node = self.tail.prev_node.prev_node
+        self.tail = new_tail
         return value
 
     def len(self):
@@ -70,3 +73,4 @@ class LinkedList:
 
 if __name__ == '__main__':
     pass
+
