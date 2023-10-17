@@ -1,3 +1,5 @@
+# Sort squares of given array elements
+
 def squares_sorted1(arr):
     if len(arr) == 0:
         return arr
@@ -24,4 +26,4 @@ def squares_sorted2(arr):
 
 
 if __name__ == '__main__':
-    print(squares_sorted2([-10,-7,-5,1,2,3,5,8,100]))
+    print(squares_sorted2([-10, -7, -5, 1, 2, 3, 5, 8, 100]))

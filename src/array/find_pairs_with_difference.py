@@ -1,3 +1,5 @@
+# Given an unsorted integer array, print all pairs with a given difference k in it.
+
 # [1, 5, 2, 2, 2, 5, 5, 4]
 
 def find_pairs_with_difference(nums, k):

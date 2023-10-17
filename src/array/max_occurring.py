@@ -1,3 +1,5 @@
+# Given a non-empty integer array, find the index of the maximum occurring element with an equal probability.
+
 import random
 
 

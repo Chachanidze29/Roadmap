@@ -1,3 +1,6 @@
+# Given an integer array, determine the index of an element
+# before which all elements are smaller and after which all are greater.
+
 def find_special(nums):
     for i in range(len(nums)):
         left_side = nums[:i + 1]

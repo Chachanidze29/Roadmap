@@ -1,3 +1,5 @@
+# Move all zeros present in an array to the end
+
 # [6, 0, 8, 2, 3, 0, 4, 0, 1]
 
 def zeros_to_the_end(nums):

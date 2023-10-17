@@ -1,3 +1,5 @@
+# Given an integer array, find the maximum product of two integers in it.
+
 # [-10, -3, 5, 6, -2]
 
 def maximum_product_pair(nums):

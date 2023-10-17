@@ -1,3 +1,6 @@
+# Given a binary array, sort it in linear time and constant space.
+# The output should print all zeros, followed by all ones.
+
 # { 1, 0, 1, 0, 1, 0, 0, 1 }
 
 def binary_linear_sort(nums):

@@ -1,4 +1,7 @@
+# Given an integer array, find the maximum product of its elements among all its subsets.
+
 # -6, 4, -5, 8, -10, 0, 8
+
 import sys
 
 

@@ -1,3 +1,5 @@
+# Find a pair with a minimum absolute sum in an array
+
 import sys
 
 

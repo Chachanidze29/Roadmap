@@ -1,3 +1,6 @@
+# Given an integer array containing duplicates, return the majority element if present.
+# A majority element appears more than n/2 times, where n is the array size.
+
 # [2, 8, 7, 2, 2, 5, 2, 3, 1, 2, 2]
 
 def find_majority_element(nums):

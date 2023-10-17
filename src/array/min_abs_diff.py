@@ -1,3 +1,5 @@
+# Find the minimum difference between the index of two given elements present in an array
+
 import sys
 
 

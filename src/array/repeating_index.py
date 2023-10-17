@@ -1,3 +1,5 @@
+# Find the minimum index of a repeating element in an array
+
 # 5, 6, 3, 4, 3, 6, 6, 4
 
 MAX_VAL = 9999

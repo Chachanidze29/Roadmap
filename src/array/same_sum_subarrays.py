@@ -1,3 +1,5 @@
+# Partition an array into two subarrays with the same sum
+
 def same_sum_subarrays(nums):
     for i in range(len(nums)):
         if sum(nums[:i]) == sum(nums[i:]):

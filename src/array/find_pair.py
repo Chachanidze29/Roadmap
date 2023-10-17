@@ -1,3 +1,5 @@
+# Given an unsorted integer array, find a pair with the given sum in it.
+
 # nums = [8, 7, 2, 5, 3, 1]
 # target = 10
 

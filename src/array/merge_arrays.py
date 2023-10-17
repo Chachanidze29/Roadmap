@@ -1,3 +1,5 @@
+# Add elements of two arrays into a new array
+
 def merge_arrays(nums1, nums2):
     if not nums1 and not nums2:
         return []

@@ -1,3 +1,5 @@
+# Find the index that divides an array into two non-empty subarrays with equal sum
+
 def non_empty_same_sum_subarray(nums):
     if not nums:
         return -1

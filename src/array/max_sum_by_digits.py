@@ -1,3 +1,5 @@
+# Find two numbers with maximum sum formed by array digits
+
 def max_sum_by_digits(nums):
     if len(nums) <= 1:
         return

@@ -1,3 +1,5 @@
+# Find duplicates within a range `k` in an array
+
 def duplicates_in_range(nums, k):
     m = {}
     end = min(k, len(nums) - 1)
