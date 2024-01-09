@@ -1,8 +1,3 @@
-function swap(a, b) {
-  [a, b] = [b, a];
-  return a, b;
-}
-
 function selection_sort(nums) {
   for (let i = 0; i < nums.length; i++) {
     let min = i;
