@@ -10,4 +10,4 @@ function insertion_sort(nums) {
   return nums;
 }
 
-console.log(insertion_sort2([3, 8, 5, 4, 1, 9, -2]));
+console.log(insertion_sort([3, 8, 5, 4, 1, 9, -2]));
